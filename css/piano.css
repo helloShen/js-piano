@@ -33,11 +33,19 @@ body {
 .key {
     width: var(--width);
     height: calc(var(--width) * 4);
-    
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.key.white {
     justify-content: end;
 }
+
+.key.black {
+    justify-content: start;
+}
+
 
 .white {
     --width: 48px;
@@ -74,25 +82,46 @@ body {
 .black.pressed {
     background-color: var(--piano-black);
     height: calc((var(--width) * 4) + 4px);
-    box-shadow: 0px 4px var(--dark-gray),
+    box-shadow: 0px 2px var(--dark-gray),
                 2px 0px 8px var(--piano-black);
 }
 
-.note {
+.note,
+.keyCode {
     text-align: center;
+    user-select: none;
+}
+
+.note {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    user-select: none;
 }
 
 .white .note {
     color: var(--light-gray);
-    font-size: 12px;
-    margin-bottom: 8px;
+    font-size: 10px;
 }
 
 .black .note {
     color: var(--light-gray);
     font-size: 8px;
+    margin-top: 4px;
+}
+
+.white .keyCode {
+    font-size: 16px;
+    font-family: 'Times New Roman', serif;
+    color: var(--gray);
+    font-weight: 10;
     margin-bottom: 8px;
+    text-shadow: 1px 1px 2px var(--light-gray);
+}
+
+.black .keyCode {
+    font-size: 12px;
+    font-family: 'Times New Roman', serif;
+    color: var(--piano-white);
+    font-weight: 10;
+    margin-top: 8px;
+    text-shadow: 1px 1px 2px black;
 }
