@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --piano-white: #FCFCFC;
+    --white: #F2F2F2;
+    --light-gray: #BCBCBC;
+    --gray: #8A8A8A;
+    --dark-gray: #5A5A5A;
+    --piano-black: #2E2E2E;
+}
+
+body {
+    margin: 0;
+}
+
+.canvas {
+    min-height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.piano {
+    height: 240px;
+    display: flex;
+}
+
+.key {
+    width: var(--width);
+    height: calc(var(--width) * 4);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.white {
+    --width: 48px;
+    border: 1px solid var(--light-gray);
+    border-bottom-left-radius: calc(var(--width) / 6);
+    border-bottom-right-radius: calc(var(--width) / 6);
+    background-color: var(--piano-white);
+    box-shadow: 0px 4px var(--light-gray),
+                2px 6px 6px var(--piano-black);
+}
+
+.white.pressed {
+    background-color: var(--white);
+    border: 0px;
+    height: calc((var(--width) * 4) + 4px);
+    box-shadow: inset 1px 2px 4px var(--dark-gray),
+                inset -1px 2px 4px var(--dark-gray),
+                0px 3px var(--light-gray),
+                2px 6px 6px var(--piano-black);
+}
+
+.black {
+    --width: 24px;
+    border-bottom-left-radius: calc(var(--width) / 4);
+    border-bottom-right-radius: calc(var(--width) / 4);
+    background-color: var(--piano-black);
+    box-shadow: 0px 4px var(--dark-gray),
+                4px 2px 8px var(--piano-black);
+    margin-left: -12px;
+    margin-right: -12px;
+    z-index: 2;
+}
+
+.black.pressed {
+    background-color: var(--piano-black);
+    height: calc((var(--width) * 4) + 4px);
+    box-shadow: 0px 4px var(--dark-gray),
+                2px 0px 8px var(--piano-black);
+}
+
+.note {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    user-select: none;
+}
+
+.white .note {
+    color: var(--light-gray);
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.black .note {
+    color: var(--light-gray);
+    font-size: 8px;
+    margin-bottom: 8px;
+}
