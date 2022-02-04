@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/piano.css"/>
+    <script src="./js/piano.js" defer></script>
+    <title>Javascript Piano</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container"><div>Javascript Piano</div></div>
+    </div>
+
+    <div class="canvas">
+        
+        <div class="topBar">
+            <div class="keyCode"></div>
+            <div data-keycode="KeyQ" class="keyCode black">
+                <div class="btn">Q</div>
+            </div>
+            <div class="keyCode"></div>
+            <div data-keycode="KeyW" class="keyCode black">
+                <div class="btn">W</div>
+            </div>
+            <div class="keyCode"></div>
+            <div class="keyCode"></div>
+            <div data-keycode="KeyE" class="keyCode black">
+                <div class="btn">E</div>
+            </div>
+            <div class="keyCode"></div>
+            <div data-keycode="KeyR" class="keyCode black">
+                <div class="btn">R</div>
+            </div>
+            <div class="keyCode"></div>
+            <div data-keycode="KeyT" class="keyCode black">
+                <div class="btn">T</div>
+            </div>
+            <div class="keyCode"></div>
+            <div class="keyCode"></div>
+            <div data-keycode="KeyY" class="keyCode black">
+                <div class="btn">Y</div>
+            </div>
+            <div class="keyCode"></div>
+            <div data-keycode="KeyU" class="keyCode black">
+                <div class="btn">U</div>
+            </div>
+            <div class="keyCode"></div>
+            <div class="keyCode"></div>
+            <div data-keycode="KeyI" class="keyCode black">
+                <div class="btn">I</div>
+            </div>
+            <div class="keyCode"></div>
+            <div data-keycode="KeyO" class="keyCode black">
+                <div class="btn">O</div>
+            </div>
+            <div class="keyCode"></div>
+            <div data-keycode="KeyP" class="keyCode black">
+                <div class="btn">P</div>
+            </div>
+            <div class="keyCode"></div>
+        </div>
+
+        <div class="piano">
+            <div>
+            <div data-note="C3" data-keycode="KeyA" class="key white">
+                <div class="note">C3</div>
+            </div>
+            </div>
+            <div data-note="Db3" data-keycode="KeyQ" class="key black">
+                <div class="note">Db3</div>
+            </div>
+            <div data-note="D3" data-keycode="KeyS" class="key white">
+                <div class="note">D3</div>
+            </div>
+            <div data-note="Eb3" data-keycode="KeyW" class="key black">
+                <div class="note">Eb3</div>
+            </div>
+            <div data-note="E3" data-keycode="KeyD" class="key white">
+                <div class="note">E3</div>
+            </div>
+            <div data-note="F3" data-keycode="KeyF" class="key white">
+                <div class="note">F3</div>
+            </div>
+            <div data-note="Gb3" data-keycode="KeyE" class="key black">
+                <div class="note">Gb3</div>
+            </div>
+            <div data-note="G3" data-keycode="KeyG" class="key white">
+                <div class="note">G3</div>
+            </div>
+            <div data-note="Ab3" data-keycode="KeyR" class="key black">
+                <div class="note">Ab3</div>
+            </div>
+            <div data-note="A3" data-keycode="KeyH" class="key white">
+                <div class="note">A3</div>
+            </div>
+            <div data-note="Bb3" data-keycode="KeyT" class="key black">
+                <div class="note">Bb3</div>
+            </div>
+            <div data-note="B3" data-keycode="KeyJ" class="key white">
+                <div class="note">B3</div>
+            </div>
+            <div data-note="C4" data-keycode="KeyK" class="key white">
+                <div class="note">C4</div>
+            </div>
+            <div data-note="Db4" data-keycode="KeyY" class="key black">
+                <div class="note">Db4</div>
+            </div>
+            <div data-note="D4" data-keycode="KeyL" class="key white">
+                <div class="note">D4</div>
+            </div>
+            <div data-note="Eb4" data-keycode="KeyU" class="key black">
+                <div class="note">Eb4</div>
+            </div>
+            <div data-note="E4" data-keycode="KeyZ" class="key white">
+                <div class="note">E4</div>
+            </div>
+            <div data-note="F4" data-keycode="KeyX" class="key white">
+                <div class="note">F4</div>
+            </div>
+            <div data-note="Gb4" data-keycode="KeyI" class="key black">
+                <div class="note">Gb4</div>
+            </div>
+            <div data-note="G4" data-keycode="KeyC" class="key white">
+                <div class="note">G4</div>
+            </div>
+            <div data-note="Ab4" data-keycode="KeyO" class="key black">
+                <div class="note">Ab4</div>
+            </div>
+            <div data-note="A4" data-keycode="KeyV" class="key white">
+                <div class="note">A4</div>
+            </div>
+            <div data-note="Bb4" data-keycode="KeyP" class="key black">
+                <div class="note">Bb4</div>
+            </div>
+            <div data-note="B4" data-keycode="KeyB" class="key white">
+                <div class="note">B4</div>
+            </div>
+        </div>
+
+        <div class="bottomBar">
+            <div data-keycode="KeyA" class="keyCode">
+                <div class="btn"><div>A</div></div>
+            </div>
+            <div data-keycode="KeyS" class="keyCode">
+                <div class="btn"><div>S</div></div>
+            </div>
+            <div data-keycode="KeyD" class="keyCode">
+                <div class="btn"><div>D</div></div>
+            </div>
+            <div data-keycode="KeyF" class="keyCode">
+                <div class="btn"><div>F</div></div>
+            </div>
+            <div data-keycode="KeyG" class="keyCode">
+                <div class="btn"><div>G</div></div>
+            </div>
+            <div data-keycode="KeyH" class="keyCode">
+                <div class="btn"><div>H</div></div>
+            </div>
+            <div data-keycode="KeyJ" class="keyCode">
+                <div class="btn"><div>J</div></div>
+            </div>
+            <div data-keycode="KeyK" class="keyCode">
+                <div class="btn"><div>K</div></div>
+            </div>
+            <div data-keycode="KeyL" class="keyCode">
+                <div class="btn"><div>L</div></div>
+            </div>
+            <div data-keycode="KeyZ" class="keyCode">
+                <div class="btn"><div>Z</div></div>
+            </div>
+            <div data-keycode="KeyX" class="keyCode">
+                <div class="btn"><div>X</div></div>
+            </div>
+            <div data-keycode="KeyC" class="keyCode">
+                <div class="btn"><div>C</div></div>
+            </div>
+            <div data-keycode="KeyV" class="keyCode">
+                <div class="btn"><div>V</div></div>
+            </div>
+            <div data-keycode="KeyB" class="keyCode">
+                <div class="btn"><div>B</div></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="text">
+            <div>Copyright ©</div>
+            <div class="email">hireme.shen@gmail.com</div>
+            <div class="split">|</div>
+            <div class="repo"> Source code - </div>
+            <div class="img"><a href="https://github.com/helloShen/js-piano"><img src="./imgs/github.png"></a></div>
+        </div>
+    </div>
+
+    <audio data-note="C3" src="./notes/key01.mp3"></audio>
+    <audio data-note="Db3" src="./notes/key02.mp3"></audio>
+    <audio data-note="D3" src="./notes/key03.mp3"></audio>
+    <audio data-note="Eb3" src="./notes/key04.mp3"></audio>
+    <audio data-note="E3" src="./notes/key05.mp3"></audio>
+    <audio data-note="F3" src="./notes/key06.mp3"></audio>
+    <audio data-note="Gb3" src="./notes/key07.mp3"></audio>
+    <audio data-note="G3" src="./notes/key08.mp3"></audio>
+    <audio data-note="Ab3" src="./notes/key09.mp3"></audio>
+    <audio data-note="A3" src="./notes/key10.mp3"></audio>
+    <audio data-note="Bb3" src="./notes/key11.mp3"></audio>
+    <audio data-note="B3" src="./notes/key12.mp3"></audio>
+    <audio data-note="C4" src="./notes/key13.mp3"></audio>
+    <audio data-note="Db4" src="./notes/key14.mp3"></audio>
+    <audio data-note="D4" src="./notes/key15.mp3"></audio>
+    <audio data-note="Eb4" src="./notes/key16.mp3"></audio>
+    <audio data-note="E4" src="./notes/key17.mp3"></audio>
+    <audio data-note="F4" src="./notes/key18.mp3"></audio>
+    <audio data-note="Gb4" src="./notes/key19.mp3"></audio>
+    <audio data-note="G4" src="./notes/key20.mp3"></audio>
+    <audio data-note="Ab4" src="./notes/key21.mp3"></audio>
+    <audio data-note="A4" src="./notes/key22.mp3"></audio>
+    <audio data-note="Bb4" src="./notes/key23.mp3"></audio>
+    <audio data-note="B4" src="./notes/key24.mp3"></audio>
+</body>
+</html>
