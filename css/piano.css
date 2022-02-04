@@ -173,6 +173,7 @@ body {
     border-radius: 4px;
     box-shadow: 1px 1px 2px var(--dark-gray),
                 -1px -1px 2px white;
+    transition: all .05s;
     /* text */
     font-family: 'Courier New', Courier, monospace;
     font-size: small;
@@ -195,12 +196,14 @@ body {
     background-color: var(--white);
     color: var(--piano-black);
     text-shadow: 1px 1px 1px var(--gray);
+    transform: scale(1.5);
 }
 
 .bottomBar .btn.pressed {
     background-color: var(--piano-black);
     color: var(--white);
     text-shadow: 1px 1px 2px black;
+    transform: scale(1.5);
 }
 
 
